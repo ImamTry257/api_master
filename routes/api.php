@@ -21,7 +21,7 @@ Route::get('/list','Users@list');
 
 // Products
 // without token
-Route::post('products','API\ProductController@product');
+Route::get('products','API\ProductController@product');
 Route::put('updateProduct','API\ProductController@updateProduct');
 
 Route::post('login', 'API\UserController@login');

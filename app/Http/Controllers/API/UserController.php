@@ -73,4 +73,9 @@ class UserController extends Controller
         $user = Auth::user(); 
         return response()->json(['success' => $user], $this-> successStatus);
     }
+
+    public function test()
+    {
+        return response()->json(['data'=>'koneksi normal']);
+    }
 }
