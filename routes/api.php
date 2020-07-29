@@ -19,6 +19,8 @@ use Illuminate\Http\Request;
 
 Route::get('/list','Users@list');
 
+Route::get('/test','API\UserController@test');
+
 // Products
 // without token
 Route::get('products','API\ProductController@product');
